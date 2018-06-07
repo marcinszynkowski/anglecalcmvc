@@ -1,2 +1,2 @@
 # anglecalcmvc
-A simple program to calculate an angle between a hour hand and a minute hand
+A simple program in asp net mvc which calculates an angle between a hour hand and a minute hand

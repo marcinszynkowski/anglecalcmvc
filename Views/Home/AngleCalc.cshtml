@@ -1,0 +1,46 @@
+﻿@model AngleCalcASPMVC.Models.AngleCalcModel
+@{
+    ViewBag.Title = "AngleCalc";
+}
+
+<h2>AngleCalc</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Godziny")
+    <div class="form-group">
+
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.hours, new { htmlAttributes = new { @class = "form-control", @type = "datetime" } })
+
+        </div>
+    </div>
+    <br />
+    @Html.Label("Minuty")
+    <div class="form-group">
+
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.mins, new { htmlAttributes = new { @class = "form-control", @type = "datetime" } })
+
+        </div>
+    </div>
+
+
+    <br />
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Calc" name="action" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+    <b> Kąty: </b>
+<div class="form-group">
+
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.result, new { htmlAttributes = new { @class = "form-control", @type = "datetime" } })
+
+    </div>
+</div>
